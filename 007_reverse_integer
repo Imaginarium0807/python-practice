@@ -1,7 +1,21 @@
-def reversenum(number):
-    revs_num = 0
-    while number > 0 :
-        remainder = number % 10
-        revs_num = revs_num * 10 + remainder
-        number = number //10
-    return revs_num
+class Solution:
+    def reverse(self, x: int) -> int:
+        rev_num = 0
+        if x > 0:
+            while x > 0:
+                remainder = x % 10
+                rev_num = rev_num * 10 + remainder
+                x = x // 10
+        else:
+            x = abs(x)
+            while x > 0:
+                remainder = x % 10
+                rev_num = rev_num * 10 + remainder
+                x = x // 10       
+            rev_num = rev_num * (-1)
+        if rev_num >= -2**31 and rev_num <= 2**31 - 1:
+            rev_num = rev_num
+        else:
+            rev_num = 0
+        return rev_num
+        
