@@ -8,3 +8,19 @@ class Solution(object):
             elif len(stack) == 0 or lookup[stack.pop()] != parenthese:
                 return False
         return len(stack) == 0
+
+--
+class Solution(object):
+    # @return a boolean
+    def isValid(self, s):
+        bracket_map = {"(": ")", "[": "]",  "{": "}"}
+        open_par = set(["(", "[", "{"])
+        stack = []
+        for i in s:
+            if i in open_par:
+                 stack.append(i)
+            elif stack and i == bracket_map[stack[-1]]:
+                  stack.pop()
+            else:
+                return False
+        return stack == []
