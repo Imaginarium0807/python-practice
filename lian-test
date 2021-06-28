@@ -112,3 +112,12 @@ def solution(input):
 assert solution([1, 2, 3, 4, 100]) == 3
 assert solution([1, 1, 5, 5, 10, 8, 7]) == 5
 assert solution([-10, -4, -2, -4, -2, 0]) == -
+def solution5(a):
+    s = l.sort()
+    if len(l) % 2 == 0:
+        s =(l[int(len(l)/2)] + l[int(len(l)/2)-1])/2
+    else:
+        s = int(l[int(len(l)+1/2)])
+
+    return int(s)       
+    
