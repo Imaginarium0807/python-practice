@@ -87,6 +87,13 @@ def solution(input):
  return output
 assert solution(123) == [1,2,3]
 assert solution(400) == [4,0,0]
+
+t = [int(e) for e in str(x)]
+
+l = []
+for e in str(x):
+    l.append(int(e))
+
 """
 From: http://codingbat.com/prob/p126968
 Return the "centered" average of an array of ints, which we'll 
