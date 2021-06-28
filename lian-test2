@@ -3,3 +3,16 @@ Python:
 - replace none with the previous value
 - given two lists output the words that don't exist in both lists
 - given a dictionary, return the key-value with n_highest_value
+def str_count(input):
+    s = input.split()
+    s_unique = set(s)
+    for word in s_unique:
+        print(word,input.count(word))
+        
+        
+        
+2. Python （刷leetcode)
+char occur in sentense
+filling none value with the most recent value
+mismatching String
+n highest value in a sorted dictionary
