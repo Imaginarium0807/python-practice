@@ -54,7 +54,13 @@ def solution(input):
         if a.index(e) % 2 !=0:
             o.append(e)
     return o
-    
+
+o = []
+def solution(input):
+    for i in range(0,len(input)):
+        if i % 2 !=0:
+            o.append(input[i])
+    return o
 """
 Write a function that returns the cumulative sum of elements in a 
 list
