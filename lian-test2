@@ -16,3 +16,27 @@ char occur in sentense
 filling none value with the most recent value
 mismatching String
 n highest value in a sorted dictionary
+
+https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/
+
+unique_list = {}
+for i in st:
+    if i in unique_list:
+        unique_list[i] += 1
+    else:
+        unique_list[i] = 1
+ls = []
+for each in unique_list.items():
+    ls.append(each)
+    
+    --
+from collections import Counter
+Counter(st)
+
+--
+res = {}
+for e in st:
+    res[e] = res.get(e,0) + 1
+--
+s_unique = set(st)
+x = {e: st.count(e) for e in s_unique}
