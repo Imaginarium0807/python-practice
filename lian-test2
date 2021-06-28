@@ -1,0 +1,5 @@
+Python:
+- 給一個string, 算某個character 出現的頻率
+- replace none with the previous value
+- given two lists output the words that don't exist in both lists
+- given a dictionary, return the key-value with n_highest_value
