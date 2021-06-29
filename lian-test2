@@ -55,3 +55,9 @@ list2 = t.split()
 common_set=set(list1)&set(list2)
 all_set = set(list1+list2)
 result_list = list(all_set-common_set)
+--
+for i in range(len(ls)):
+    if ls[i] == None:
+        ls[i] = ls[i-1]
+    else:
+        ls[i] = ls[i]
