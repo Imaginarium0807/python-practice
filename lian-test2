@@ -40,3 +40,18 @@ for e in st:
 --
 s_unique = set(st)
 x = {e: st.count(e) for e in s_unique}
+
+--
+s = 'karama is a bitch do you believe it yes I believe it'
+ls = list(s.replace(" ",""))
+unique_ls = set(ls)
+count1 = {e: ls.count(e) for e in unique_ls}
+s_count = {e: count1[e] for e in sorted(count1,key=count1.get,reverse = True)}
+-
+
+list1 = ["best","test","lala","apple","karama"]
+t = 'karama is a bitch do you believe it yes I believe it lala'
+list2 = t.split()
+common_set=set(list1)&set(list2)
+all_set = set(list1+list2)
+result_list = list(all_set-common_set)
